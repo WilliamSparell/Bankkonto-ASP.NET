@@ -11,9 +11,13 @@ namespace BankTests
         {
             // Arrange
             Bankkonto bankAccount = new Bankkonto();
+            double balance = 100;
+
             // Act
+            double result = bankAccount.Withdraw(99);
 
             // Assert
+            Assert.AreEqual(result, -99);
         }
 
         public void DepositShouldWork()

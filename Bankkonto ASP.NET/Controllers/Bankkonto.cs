@@ -10,7 +10,7 @@ namespace Bankkonto_ASP.NET.Controllers
             return cash += amount;
         }
 
-        double Withdraw(double amount)
+        public double Withdraw(double amount)
         {
             return cash -= amount;
         }
