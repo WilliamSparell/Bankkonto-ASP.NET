@@ -20,18 +20,33 @@ namespace BankTests
             Assert.AreEqual(result, -99);
         }
 
+        [TestMethod]
         public void DepositShouldWork()
-        { 
+        {
             // Arrange
+            Bankkonto bankAccount = new Bankkonto();
+            double balance = 100;
+
             // Act
-            // Assert        
+            double result = bankAccount.Deposit(99);
+
+            // Assert
+            Assert.AreEqual(result, 99);
+
         }
 
+        [TestMethod]
         public void GetCashShouldWork()
         {
             // Arrange
+            Bankkonto bankAccount = new Bankkonto();
+            double balance = 100;
+
             // Act
-            // Assert        
+            double result = bankAccount.GetCash();
+
+            // Assert
+            Assert.AreEqual(result, 0);
         }
 
     }

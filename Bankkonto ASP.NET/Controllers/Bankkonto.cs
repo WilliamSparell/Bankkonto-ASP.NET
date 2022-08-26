@@ -5,7 +5,7 @@ namespace Bankkonto_ASP.NET.Controllers
     {
         double cash = 0;
 
-        double Deposit(double amount)
+        public double Deposit(double amount)
         {
             return cash += amount;
         }
@@ -15,7 +15,7 @@ namespace Bankkonto_ASP.NET.Controllers
             return cash -= amount;
         }
 
-        double GetCash()
+        public double GetCash()
         {
             return cash;
         }
