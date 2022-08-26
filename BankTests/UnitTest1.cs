@@ -1,4 +1,5 @@
-using Bankkonto_ASP;
+using Bankkonto_ASP.NET;
+using Bankkonto_ASP.NET.Controllers;
 
 namespace BankTests
 {
@@ -9,9 +10,7 @@ namespace BankTests
         public void WithdrawShouldWork()
         {
             // Arrange
-            // Bankkonto_ASP bankAccount = new Bankkonto_ASP(); FUNKAR INTE
-            
-
+            Bankkonto bankAccount = new Bankkonto();
             // Act
 
             // Assert
