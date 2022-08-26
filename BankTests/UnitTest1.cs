@@ -31,7 +31,7 @@ namespace BankTests
             double result = bankAccount.Withdraw(99);
 
             // Assert
-            Assert.AreEqual(result, 999);
+            Assert.AreEqual(result, -99);
         }
 
 
