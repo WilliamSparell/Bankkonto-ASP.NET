@@ -21,6 +21,21 @@ namespace BankTests
         }
 
         [TestMethod]
+        public void WithdrawShouldNotWork()
+        {
+            // Arrange
+            Bankkonto bankAccount = new Bankkonto();
+            double balance = 100;
+
+            // Act
+            double result = bankAccount.Withdraw(99);
+
+            // Assert
+            Assert.AreEqual(result, 999);
+        }
+
+
+        [TestMethod]
         public void DepositShouldWork()
         {
             // Arrange
@@ -32,7 +47,6 @@ namespace BankTests
 
             // Assert
             Assert.AreEqual(result, 99);
-
         }
 
         [TestMethod]
@@ -48,6 +62,5 @@ namespace BankTests
             // Assert
             Assert.AreEqual(result, 0);
         }
-
     }
 }
